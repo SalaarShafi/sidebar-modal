@@ -1,6 +1,6 @@
 Check it out here: https://sidebar-modal-salaarshafi.netlify.app/
 
-This is a project showcasing my abilities to use the useContext hook and functionality, passing in information inbetween files and functions of the project having bypassed the need to use prop drilling. So there is no real content on the site only two buttons to show how the functionality works. In this project you can click on two buttons, one of which you can click to show the modal and another bars icon button that you can click to show the sidebar. When ever you click either the modal or the sidebar, at their top right is a cross icon button you can use to close the said components. 
+This is a project showcasing my abilities to use the useContext hook and functionality, passing in information inbetween files and functions of the project having bypassed the need to use prop drilling. So there is no real content on the site, only two buttons to show how the functionality works. In this project you can click on two buttons, one of which you can click to show the modal and another bars icon button that you can click to show the sidebar. When ever you click either the modal or the sidebar, at their top right is a cross icon button you can use to close the said components. 
 
 For the functionality of this project one main js file has been created called the App.js file and other files such as home.js, modal.js and sidebar.js have been created which contain functions that export jsx components for their respective component properties.
 
