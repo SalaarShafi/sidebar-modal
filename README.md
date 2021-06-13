@@ -1,1 +1,15 @@
 Check it out here: https://sidebar-modal-salaarshafi.netlify.app/
+
+This is a project showcasing my abilities to use the useContext hook and functionality, passing in information inbetween files and functions of the project having bypassed the need to use prop drilling. So there is no real content on the site only two buttons to show how the functionality works. In this project you can click on two buttons, one of which you can click to show the modal and another bars icon button that you can click to show the sidebar. When ever you click either the modal or the sidebar, at their top right is a cross icon button you can use to close the said components. 
+
+For the functionality of this project one main js file has been created called the App.js file and other files such as home.js, modal.js and sidebar.js have been created which contain functions that export jsx components for their respective component properties.
+
+A context file has been created in which a const AppContext is set equal to React.createContext(). An AppProvider function has been defined which takes in (children) as an argument and returns the AppContext.Provider component having in it the children property between the starting and ending tag. It also has a value attribute in which we can pass anything from this context file to be accessed in any of the children functions or jsx components inbetween the tags.
+
+In the AppProvider function an isSidebarOpen state and an isModalOpen state is defined. Susequently openSidebar and openModal functions are also defined which set the isSidebarOpen state and isModalState to true boolean values. And closeSidebar and closeModal functions are defined which set both these states to false boolean values. Both these states and all four of these functions are passed into the values object in the AppContext.provider tag.
+
+Now in the homepage.js, sidebar.js, modal.js files the AppContext const is imported and the useContext hook is imported from react. The AppContext which is imported from the context.js file is placed in the useContext hook to which a data const has been set equal to. This data const is now destructured and the openSidebar and openModal functions are extracted. The openSidebar function is put in to the onClick attribute of the bars button and the openModal function is put into the onCLick attribute of the showModal button.
+
+Whenever the isSidebarOpen state is set to true the same context schpiel is carried out in the sidebar function and a ternary operator is used which when determines whether the isSidebarOpen state is true returns the jsx component present in it. The closeSidebar function is also brought in and destructured by use of useContext and when clicked set's the isSidebarOpen state to false returning null from the ternary operator and showing nothing. This function is present in the onClick attribute of the cross icon button.
+
+The Modal function  also has the same functionalities mentioned above in the sideBar function but just with the mirroring isModalOpen state and closeModal function.
